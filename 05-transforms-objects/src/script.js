@@ -13,7 +13,17 @@ const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: 'tomato' });
 const mesh = new THREE.Mesh(geometry, material);
 
+// mesh.position.x = 1;
+// mesh.position.y = 1;
+// mesh.position.z = 1;
+mesh.position.set(1, 1, 1);
+
 scene.add(mesh);
+
+// Axes helper
+const axesHelper = new THREE.AxesHelper();
+
+scene.add(axesHelper)
 
 // Sizes
 const sizes = {
